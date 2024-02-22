@@ -100,7 +100,10 @@ async function getData(city){
 
             cityName.value = ""
         } catch (error) {
-            console.error(error);
+            salahShowTime.innerHTML = `
+                <img style="width: 150px; height: 150px" src = "./assets/images/error.svg">
+                <p>Please write name correctly</p>
+            `
         }
     }
     
